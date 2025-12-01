@@ -69,8 +69,6 @@ cd liboqs && mkdir build && cd build
 cmake -GNinja -DOQS_USE_OPENSSL=OFF ..
 ninja && sudo ninja install && sudo ldconfig
 
-text
-
 ### 2. Build Void-Gate / Сборка проекта
 Clone repository
 git clone https://github.com/YOUR_USERNAME/void-gate.git
@@ -80,8 +78,6 @@ Compile
 mkdir build && cd build
 cmake -G Ninja ..
 ninja
-
-text
 
 ---
 
@@ -95,22 +91,17 @@ Starts the VPN server on port 5555. Creates `void0` interface.
 Запускает сервер на порту 5555. Создает интерфейс `void0`.
 sudo ./voidgate server 5555
 
-text
-
 ### 2. Client Side / Клиент
 Connects to the server. Creates `void1` interface.
 Подключается к серверу. Создает интерфейс `void1`.
 sudo ./voidgate client <SERVER_IP> 5555
 
-text
 *(For local test use `127.0.0.1` / Для теста локально используйте `127.0.0.1`)*
 
 ### 3. Verify / Проверка
 Open a new terminal and ping the secure tunnel address.
 Откройте новый терминал и пропингуйте адрес внутри туннеля.
 ping 10.99.0.1
-
-text
 
 ---
 
@@ -123,12 +114,10 @@ text
 
 [*] Listening for traffic...
 [STATUS] TX: 12.4MB | RX: 45.1MB | Secured by Kyber-512
-
-text
-
 ---
 
 ### ⚠️ Disclaimer
 This is a Proof-of-Concept (PoC) for educational purposes. / Это учебный прототип (PoC) для демонстрации технологий.
+
 
 **License:** MIT
