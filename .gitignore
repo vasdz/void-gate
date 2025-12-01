@@ -1,0 +1,5 @@
+cmake-build-*/
+build_final/
+build_manual/
+.idea/
+.DS_Store
